@@ -1,0 +1,65 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="assets/css/foundation.css">
+  </head>
+  <style>
+    .relative {
+        padding: 10px;
+        position: relative;
+        background-color: rgb(71, 71, 71);
+        margin: 10px;
+    }
+    
+    .navitem {
+        display: inline-block;
+        width: 70px;
+        height: 30px;
+        text-align: center;
+        border: gray;
+        background-color: #E8562A;
+        color: #fff;
+        cursor: pointer;
+        font-weight: bold;
+    }
+</style>
+<body style="background-color:rgb(71, 71, 71);">
+  
+    <div class="grid-container">
+      <div class="grid-x grid-padding-x">
+        <div class="large-12 cell">
+
+          <h1>YoreAI - Let's make spelling easier</h1>
+
+          <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="Type something ..."></textarea>
+
+
+          <hr />
+
+          <div class="relative">
+            <h1>Suggestions</h1>
+                <button class="navitem" id='suggestion1'></button>
+                <button class="navitem" id='suggestion2'></button>
+                <button class="navitem" id='suggestion3'></button>
+
+            <p id="connectives" style="color: whitesmoke;"></p>
+
+            <p id="sentences"  style="color: whitesmoke;"> </p>
+
+        </div>
+    
+      </div>
+    </div>
+
+
+<script src="assets/js/vendor.js"></script>
+<script src="assets/js/foundation.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src='lexicalNew.js'></script>
+</body>
+
+</html>
